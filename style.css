@@ -1,0 +1,128 @@
+/*Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+
+### Neutral
+
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: hsl(0, 0%, 95%);
+}
+.container{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.card-sedan{
+    width: 300px;
+    height: 80vh;
+    background: hsl(31, 77%, 52%);
+    padding: 25px 45px;
+    color: #fff;
+    border-radius: 5px 0 0 5px;
+}
+.card-suv{
+    width: 300px;
+    height: 80vh;
+    background: hsl(184, 100%, 22%);
+    padding: 25px 45px;
+    color: #fff;
+}
+.card-lux{
+    width: 300px;
+    height: 80vh;
+    background: hsl(179, 100%, 13%);
+    padding: 25px 45px;
+    color: #fff;
+    border-radius: 0 5px 5wpx 0;
+}
+h1{
+    margin: 70px 0 30px 0;
+    font-family: 'Big Shoulders Display', cursive;
+}
+p{
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: 100;
+    width: 200px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.card-sedan button{
+    margin-top: 120px;
+    border: none;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 95%);
+    padding: 10px 20px;
+    color: hsl(31, 77%, 52%);
+    font-weight: 700;
+    cursor: pointer;
+}
+.card-sedan button:hover{
+    background: hsl(31, 77%, 52%);
+    border: 1px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+.card-suv button{
+    margin-top: 120px;
+    border: none;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 95%);
+    padding: 10px 20px;
+    color: hsl(184, 100%, 22%);
+    font-weight: 700;
+    cursor: pointer;
+}
+.card-suv button:hover{
+    background: hsl(184, 100%, 22%);
+    border: 1px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+.card-lux button{
+    margin-top: 120px;
+    border: none;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 95%);
+    padding: 10px 20px;
+    color: hsl(179, 100%, 13%);
+    font-weight: 700;
+    cursor: pointer;
+}
+.card-lux button:hover{
+    background: hsl(179, 100%, 13%);
+    border: 1px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+@media screen and (max-width: 768px) {
+    body{
+        height: 300rem;
+    }
+    .container{
+        flex-direction: column;
+        margin-top: 25rem;
+    }
+    .card-sedan, .card-suv, .card-lux{
+        width: 300px;
+        height: 450px;
+    }
+    .card-sedan button, .card-suv button, .card-lux button{
+        margin-top: 40px;
+    }
+    .card-sedan{
+        border-radius: 5px 5px 0 0;
+    }
+    .card-lux{
+        border-radius: 0 0 4px 4px;
+    }
+}
